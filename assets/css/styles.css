@@ -1,12 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
+    font-family: "Arial", sans-serif;
 }
 
 header {
@@ -42,6 +44,25 @@ nav a {
 nav a:hover {
     color: #ffc107;
     transition: color 1s ease;
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#lista-estados a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
 }
 
 footer {
